@@ -67,7 +67,7 @@ namespace ll_markdown
         int get_indent(const string_t &line) const
         {
             int count{0};
-            for (char16_t c : line)
+            for (char_t c : line)
             {
                 if (!std::isspace(c))
                     return count;
